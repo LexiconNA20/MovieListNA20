@@ -20,5 +20,5 @@
     </div>
 </form>
 
-
-<partial name="MovieListPartial" model="@Model.Movies" />
+@await Html.PartialAsync("MovieListPartial", Model.Movies)
+@*<partial name="MovieListPartial" model="@Model.Movies" />*@
